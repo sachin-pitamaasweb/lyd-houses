@@ -1,0 +1,54 @@
+.get-connected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 8%;
+}
+
+.get-connected h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.get-connected form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.get-connected input,
+.get-connected textarea {
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.get-connected textarea {
+    height: 100px;
+    resize: none;
+}
+
+.get-connected button {
+    background-color: #a42d2d;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-connected button:hover {
+    background-color: #912323;
+}
+.error{
+    color: red;
+    margin-bottom: 10px;
+}

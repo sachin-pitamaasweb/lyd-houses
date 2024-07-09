@@ -1,0 +1,58 @@
+.search-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 11, 0.1);
+    text-align: center;
+    max-width: 772px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .search-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .MuiGrid-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .MuiTextField-root {
+    width: 100%;
+  }
+  
+  .search-button {
+    background-color: #8B0000;
+    color: #fff;
+    margin-top: 34px;
+    width: 60%;
+    padding: 6px 0;
+  }
+  
+  .search-button:hover {
+    background-color: #a52a2a; 
+  }
+  
+
+  @media screen and (max-width:899px) {
+    .search-form-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 1px;
+      box-shadow: 0 2px 3px 1px rgba(0, 0, 11, 0.1);
+      text-align: center;
+      max-width: 772px;
+      margin: 20px 20px 0px 20px;
+    }
+    .search-button {
+      background-color: #8B0000;
+      color: #fff;
+      margin-top: 34px;
+      width: 60%;
+      padding: 13px 0;
+      font-size: calc(15px + 0.5vw);
+  }
+  }

@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 50px;
+  background: #fff;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 3px;
+  padding: 3px;
+  gap: calc(10px + 5vw); /* Dynamic gap using calc and vw */
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact {
+  border: #a31b1b 1px solid;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #a31b1b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.contact i {
+  margin-right: 5px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menu-icon .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+@media screen and (max-width: 899px) {
+  .nav ul {
+    gap: calc(35px + 3vw); /* Adjusted dynamic gap for smaller screens */
+  }
+
+  .nav li {
+    margin: 0 1px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  .nav ul {
+    gap: calc(0px + 3vw); /* Adjusted dynamic gap for medium screens */
+  }
+
+  .nav li {
+    margin: 0 1px;
+  }
+}

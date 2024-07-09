@@ -1,0 +1,123 @@
+.gallery-container {
+  padding-top: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 3%;
+}
+
+.grid-container {
+  width: 90% !important;
+}
+
+.gallery-item-img{
+  width: 100%;
+}
+.gallery-container h5 {
+  font-size: calc(15px + 1.5vw);
+  /* Responsive font size using calc and vw */
+  margin: 0;
+  font-weight: 400;
+  margin-left: calc(20px + 5vw);
+  /* Responsive margin using calc and vw */
+}
+
+.gallery-container h4 {
+  font-size: calc(30px + 3vw);
+  /* Responsive font size using calc and vw */
+  margin: 0;
+  font-weight: 600;
+  margin-left: calc(20px + 5vw);
+  /* Responsive margin using calc and vw */
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px !important;
+}
+
+.grid-div-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-item-img{
+    width: 100%;
+  }
+  .gallery-container h5 {
+    font-size: calc(12px + 1.5vw);
+    margin-left: calc(10px + 5vw);
+  }
+
+  .gallery-container h4 {
+    font-size: calc(24px + 3vw);
+    margin-left: calc(10px + 5vw);
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .gallery-item-img{
+    width: 100%;
+  }
+
+  .gallery-container h5 {
+    font-size: calc(12px + 1.5vw);
+    margin-left: calc(10px + 5vw);
+  }
+
+  .gallery-container h4 {
+    font-size: calc(24px + 3vw);
+    margin-left: calc(10px + 5vw);
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  .gallery-item-img{
+    width: 100%;
+  }
+  .gallery-container h5 {
+    font-size: calc(12px + 1.5vw);
+    margin-left: calc(10px + 5vw);
+  }
+
+  .gallery-container h4 {
+    font-size: calc(24px + 3vw);
+    margin-left: calc(10px + 5vw);
+  }
+}
+
+
+
+@media screen and (min-width: 901px) and (max-width:1300px) {
+  .gallery-item-img{
+    width: 100%;
+  }
+  .gallery-container h5 {
+    font-size: calc(12px + 1.5vw);
+    margin-left: calc(10px + 5vw);
+  }
+
+  .gallery-container h4 {
+    font-size: calc(24px + 3vw);
+    margin-left: calc(10px + 5vw);
+  }
+}
+
+
+
+@media screen and (min-width: 1301px) and (max-width:1800px) {
+  .gallery-item-img{
+    width: 100%;
+  }
+  .gallery-container h5 {
+    font-size: calc(12px + 1.5vw);
+    margin-left: calc(10px + 5vw);
+  }
+
+  .gallery-container h4 {
+    font-size: calc(24px + 3vw);
+    margin-left: calc(10px + 5vw);
+  }
+}

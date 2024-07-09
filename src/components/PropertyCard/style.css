@@ -1,0 +1,235 @@
+.property-card {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 40px; */
+}
+
+.property-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-card-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.property-card-content h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #a31b1b;
+}
+
+.property-card-content h4 {
+  font-size: 18px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.property-card-content p {
+  margin: 10px 0;
+}
+
+.property-address {
+  font-weight: bold;
+  color: #a31b1b;
+}
+
+.property-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin: 17px 0;
+  column-gap: 43px;
+  row-gap: 5px;
+}
+
+.property-details div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.property-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.property-card-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #881A1B;
+  margin: 24px;
+  border-radius: 10px;
+}
+
+.property-card-actions button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.property-card-actions button:hover {
+  background-color: #881A1B;
+  color: #fff;
+}
+
+
+.divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  background-color: #881A1B;
+  position: absolute;
+  z-index: 1;
+  width: 175px;
+  height: 1px;
+}
+
+
+
+.overlay-button {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 22px;
+}
+
+.overlay-button .top-section {
+  flex: 1;
+  /* background-color: red; */
+  /* border-top: 1px solid #881A1B;
+  border-left: 1px solid #881A1B;
+  border-right: 1px solid #881A1B; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  border: 1px solid #881A1B;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay-button .bottom-section {
+  flex: 1;
+  /* background-color: blue; */
+  border-bottom: 1px solid #881A1B;
+  border-left: 1px solid #881A1B;
+  border-right: 1px solid #881A1B;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.see-detail {
+  width: 100%;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 0px 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  border-radius: 0px 0px 7px 7px;
+  /* transition: background-color 0.3s; */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-us {
+  width: 100%;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 0px 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  border-radius: 7px 7px 0px 0px;
+  /* transition: background-color 0.3s; */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-us:hover {
+  background-color: #881A1B;
+  border: 1px solid #881A1B;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.see-detail:hover {
+  background-color: #881A1B;
+  color: #fff;
+}
+
+.wishlist {
+  padding: 40px;
+}
+
+@media screen and (max-width: 1599px) {
+  .property-card {
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 40px; */
+    height: 330px;
+}
+.property-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.property-card-image {
+  width: 35%;
+}
+.property-card-content h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #a31b1b;
+}
+.property-card-content h4 {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+.property-card-content p {
+  margin: 0;
+  font-size: 16px;
+}
+.property-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 11px 0;
+  column-gap: 16px;
+  row-gap: 6px;
+}
+.overlay-button {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 22px;
+}
+.property-image-web{
+  width: 30px !important;
+}
+}

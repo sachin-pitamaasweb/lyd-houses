@@ -1,0 +1,26 @@
+.about-image{
+    padding: 40px;
+}
+.image-section{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (max-width: 600px) {
+    .image-section img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px)and (max-width: 899px) {
+    .image-section img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px)and (max-width: 1800px) {
+    .image-section img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'made-tommy-soft-light-personal-use';
+  src: url('./assets/font/MADE-Tommy-Soft-Light-PERSONAL-USE.woff') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: "made-tommy-soft-light-personal-use", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

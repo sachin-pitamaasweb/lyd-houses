@@ -1,0 +1,288 @@
+  /* .card-content-fav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .property-details-mobile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 15px;
+  }
+
+  .property-image{
+    width: 25px !important;
+  }
+  
+  .property-info{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .property-details-card-icon{
+    display: flex;
+    justify-content: center;
+  } */
+
+
+  @font-face {
+    font-family: 'made-tommy-soft-light-personal-use';
+    src: url('../../assets/font/MADE-Tommy-Soft-Light-PERSONAL-USE.woff') format('truetype');
+  }
+  
+ .property-card-mobile-mobile {
+    width: 100%;
+    max-width: 389px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: block !important;
+  }
+  
+  .typo-title-mobile {
+    font-size: 30px !important;
+    text-align: left !important;
+    color: #8B0000 !important;
+    font-family: 'made-tommy-soft-light-personal-use !important';
+  }
+  
+  .typo-details-mobile {
+    text-align: left !important;
+    font-size: 20px !important;
+    font-family: 'made-tommy-soft-light-personal-use !important';
+  }
+  
+  .typo-address-mobile {
+    text-align: left !important;
+    color: #8B0000 !important;
+    font-family: 'made-tommy-soft-light-personal-use !important';
+  
+  }
+  
+  .span-div {
+    font-size: 10px;
+    margin: -3px 0px 4px 0px;
+    text-align: left;
+  }
+  
+ .property-card-mobile:hover {
+    transform: scale(1.05);
+  }
+  
+  .property-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  
+  .contact-button-mobile {
+    background-color: #8B0000;
+    color: #fff;
+    width: 100%;
+    font-family: 'made-tommy-soft-light-personal-use !important';
+  }
+  
+  .contact-button-mobile:hover {
+    background-color: #a52a2a;
+  }
+  
+  .property-price-mobile {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px;
+  }
+
+  @media screen and (max-width: 330px) {
+   .property-card-mobile {
+      width: 100%;
+      max-width: 290px;
+      margin: 17px;
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  
+    .properties-grid-container {
+      padding: 19px 19px 19px 1px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+  
+  @media screen and (min-width: 331px) and (max-width: 350px) {
+  
+   .property-card-mobile {
+      width: 100%;
+      max-width: 303px;
+      margin: 17px;
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+  
+    }
+  
+    .properties-grid-container {
+      padding: 19px 19px 19px 1px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 351px) and (max-width: 370px) {
+  
+   .property-card-mobile {
+      width: 100%;
+      max-width: 325px;
+      margin: 25px;
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+  
+    }
+  
+    .properties-grid-container {
+      padding: 19px 19px 19px 1px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+  
+  @media screen and (min-width: 371px) and (max-width: 400px) {
+  
+   .property-card-mobile {
+      width: 100%;
+      max-width: 325px;
+      margin: 30px;
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+  
+    }
+  
+    .properties-grid-container {
+      padding: 19px 19px 19px 1px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 450px) {
+  
+   .property-card-mobile {
+      width: 100%;
+      max-width: 325px;
+      margin: 40px;
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+  
+    }
+  
+    .properties-grid-container {
+      padding: 19px 19px 19px 1px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 451px) and (max-width: 500px) {
+  
+   .property-card-mobile {
+      width: 100%;
+      max-width: 325px;
+      margin: 40px;
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+  
+    }
+  
+    .properties-grid-container {
+      padding: 19px 19px 19px 1px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 501px) and (max-width: 550px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  
+  @media screen and (min-width: 551px) and (max-width: 600px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 650px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 650px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+       height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 651px) and (max-width: 899px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 90px) and (max-width: 1025px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1026px) and (max-width: 1200px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1201px) and (max-width: 1300px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1301px) and (max-width: 1800px) {
+   .property-card-mobile {
+      box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      height: auto;
+    }
+  }
+  
+  

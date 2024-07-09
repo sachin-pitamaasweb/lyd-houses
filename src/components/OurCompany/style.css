@@ -1,0 +1,198 @@
+/* .company-section{
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+    padding-bottom: 8% !important;
+    padding-top: 5% !important;
+}
+.company-content h2{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+.company-content h1{
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 4px;
+}
+.company-content p{
+    font-size: 32px;
+    margin: 38px 0px;
+    font-weight: 300;
+}
+.highlight{
+    color: #000;
+    font-weight: 400;
+}
+.get-in-touch-button{
+    background-color: #A31B1B;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.company-image{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    padding-bottom: 8% !important;
+    padding-top: 5% !important;
+} */
+
+.company-section {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+    padding-bottom: 8% !important;
+    padding-top: 5% !important;
+}
+
+.company-content h2 {
+    font-size: calc(20px + 2vw);
+    /* Responsive font size using calc and vw */
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: calc(2px + 0.2vw);
+    /* Responsive letter spacing */
+}
+
+.company-content h1 {
+    font-size: calc(32px + 3vw);
+    /* Responsive font size using calc and vw */
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: calc(2px + 0.2vw);
+    /* Responsive letter spacing */
+}
+
+.company-content p {
+    font-size: calc(16px + 1.5vw);
+    /* Responsive font size using calc and vw */
+    margin: 38px 0px;
+    font-weight: 300;
+}
+
+.highlight {
+    color: #000;
+    font-weight: 400;
+}
+
+.get-in-touch-button {
+    background-color: #A31B1B;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: calc(12px + 0.5vw);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.company-image {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    padding-bottom: 8% !important;
+    padding-top: 5% !important;
+}
+
+@media screen and (max-width: 600px) {
+    .company-content h2 {
+        font-size: calc(18px + 1.5vw);
+        letter-spacing: calc(1.5px + 0.2vw);
+    }
+
+    .company-content h1 {
+        font-size: calc(28px + 2.5vw);
+        letter-spacing: calc(1.5px + 0.2vw);
+    }
+
+    .company-content p {
+        font-size: calc(14px + 1.2vw);
+    }
+
+    .get-in-touch-button {
+        font-size: calc(10px + 0.5vw);
+    }
+
+    .company-image {
+        padding-left: 14px !important;
+        padding-right: 0px !important;
+        padding-bottom: 8% !important;
+        padding-top: 5% !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    .company-content h2 {
+        font-size: calc(18px + 1.5vw);
+        letter-spacing: calc(1.5px + 0.2vw);
+    }
+
+    .company-content h1 {
+        font-size: calc(28px + 2.5vw);
+        letter-spacing: calc(1.5px + 0.2vw);
+    }
+
+    .company-content p {
+        font-size: calc(14px + 1.2vw);
+    }
+
+    .get-in-touch-button {
+        font-size: calc(10px + 0.5vw);
+    }
+
+    .company-image {
+        padding-left: 14px !important;
+        padding-right: 0px !important;
+        padding-bottom: 8% !important;
+        padding-top: 5% !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .company-content h2 {
+        font-size: calc(20px + 2vw);
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: calc(2px + 0.2vw);
+    }
+
+    .company-content h1 {
+        font-size: calc(22px + 3vw);
+        font-weight: 400;
+        margin: 0;
+        letter-spacing: calc(2px + 0.2vw);
+    }
+
+    .company-content p {
+        font-size: calc(11px + 1.5vw);
+        margin: 38px 0px;
+        font-weight: 300;
+    }
+    .get-in-touch-button {
+        background-color: #A31B1B;
+        color: white;
+        padding: 12px 35px;
+        border: none;
+        border-radius: 5px;
+        font-size: calc(12px + 0.5vw);
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .company-image {
+        padding-left: 14px !important;
+        padding-right: 0px !important;
+        padding-bottom: 8% !important;
+        padding-top: 5% !important;
+    }
+    .company-image img{
+        width: 100%;
+    }
+}

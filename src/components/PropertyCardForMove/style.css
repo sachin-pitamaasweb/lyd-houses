@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'made-tommy-soft-light-personal-use';
+  src: url('../../assets/font/MADE-Tommy-Soft-Light-PERSONAL-USE.woff') format('truetype');
+}
+
+.property-card {
+  width: 100%;
+  max-width: 389px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: block !important;
+}
+
+.typo-title {
+  font-size: 30px !important;
+  text-align: left !important;
+  color: #8B0000 !important;
+  font-family: 'made-tommy-soft-light-personal-use !important';
+}
+
+.typo-details {
+  text-align: left !important;
+  font-size: 20px !important;
+  font-family: 'made-tommy-soft-light-personal-use !important';
+}
+
+.typo-address {
+  text-align: left !important;
+  color: #8B0000 !important;
+  font-family: 'made-tommy-soft-light-personal-use !important';
+
+}
+
+.span-div {
+  font-size: 10px;
+  margin: -3px 0px 4px 0px;
+  text-align: left;
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+}
+
+.property-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.property-price {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0px;
+}
+
+.contact-button {
+  background-color: transparent !important;
+  color: #8B0000 !important;
+  border: 1px solid #8B0000 !important;
+  width: 100%;
+  font-family: 'made-tommy-soft-light-personal-use !important';
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #a52a2a !important;
+  color: white !important;
+}
+.property-button{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  gap: 5px;
+}
+.dialog-title{
+  font-family: 'made-tommy-soft-light-personal-use !important'; 
+}
+.dialog-submit-button{
+ font-family: 'made-tommy-soft-light-personal-use !important'; 
+}
+
+@media screen and (max-width: 330px) {
+  .property-card {
+    width: 100%;
+    max-width: 290px;
+    margin: 17px;
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+
+  .properties-grid-container {
+    padding: 19px 19px 19px 1px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 331px) and (max-width: 350px) {
+
+  .property-card {
+    width: 100%;
+    max-width: 303px;
+    margin: 17px;
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+
+  }
+
+  .properties-grid-container {
+    padding: 19px 19px 19px 1px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+
+@media screen and (min-width: 351px) and (max-width: 370px) {
+
+  .property-card {
+    width: 100%;
+    max-width: 325px;
+    margin: 25px;
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+
+  }
+
+  .properties-grid-container {
+    padding: 19px 19px 19px 1px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 371px) and (max-width: 400px) {
+
+  .property-card {
+    width: 100%;
+    max-width: 325px;
+    margin: 30px;
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+
+  }
+
+  .properties-grid-container {
+    padding: 19px 19px 19px 1px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 450px) {
+
+  .property-card {
+    width: 100%;
+    max-width: 325px;
+    margin: 40px;
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+
+  }
+
+  .properties-grid-container {
+    padding: 19px 19px 19px 1px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+
+@media screen and (min-width: 451px) and (max-width: 500px) {
+
+  .property-card {
+    width: 100%;
+    max-width: 325px;
+    margin: 40px;
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+
+  }
+
+  .properties-grid-container {
+    padding: 19px 19px 19px 1px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 550px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 600px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 650px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 650px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+     height: auto;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 899px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 90px) and (max-width: 1025px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 1026px) and (max-width: 1200px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 1301px) and (max-width: 1800px) {
+  .property-card {
+    box-shadow: 1px 1px 7px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    height: auto;
+  }
+}
+
