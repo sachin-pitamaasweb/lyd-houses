@@ -4,6 +4,7 @@ import { useTheme, useMediaQuery } from '@mui/material';
 
 //common
 import Banner from '../../common/Banner/index.jsx';
+import Text from '../../common/Text/index.jsx';
 
 //components
 import Experience from '../../components/Experience/index.jsx';
@@ -11,6 +12,7 @@ import PropertyCard from '../../components/PropertyCard/index.jsx';
 import CraftedwithLove from '../../components/CraftedwithLove/index.jsx';
 import GetConnected from '../../components/GetConnected/index.jsx';
 import Testimonials from '../../components/Testimonials/index.jsx';
+import WhyChoose from '../../components/WhyChoose/index.jsx';
 
 //mobile
 import ExperienceForMobile from '../../components/Experience/ExperienceForMobile.jsx';
@@ -19,6 +21,7 @@ import PropertyCardForMobileView from '../../components/PropertyCard/PropertyCar
 import { webName, EstatesCard } from '../../constants/helper.js';
 
 import './style.css';
+
 
 const Home = () => {
   const theme = useTheme();
@@ -54,6 +57,11 @@ const Home = () => {
         items={items}
         isMobile={isMobile}
       />
+      <Text
+        startText="At"
+        midText="LYD Housing LLC"
+        endText="we are dedicated to crafting dream homes that embody your dreams, aspirations, and lifestyle. Our mission is to deliver high-quality, affordable, and environmentally friendly houses that cater to your diverse needs."
+      />
 
       {isMobile1 ? <ExperienceForMobile /> : <Experience />}
       <div className={isMobile ? "home-estates-mobile" : "home-estates"}>
@@ -70,6 +78,7 @@ const Home = () => {
 
       </div>
       <CraftedwithLove />
+      <WhyChoose />
       <GetConnected />
       <Testimonials />
     </>

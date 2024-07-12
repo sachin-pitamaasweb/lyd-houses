@@ -1,0 +1,42 @@
+.why-choose {
+    padding: calc(1.5em + 2vw) calc(1.5em + 2vw) calc(1em + 1vw) calc(8em + 2vw);
+    max-width: 100%;
+}
+
+.why-text {
+    font-size: calc(1.5em + 1vw);
+    margin: 0;
+    font-weight: 200;
+}
+
+.why-text-lyd {
+    margin: 0;
+    font-size: calc(2.5em + 1vw);
+    font-weight: 200;
+}
+
+.why-choose p {
+    font-size: calc(1em + 0.5vw);
+    margin-bottom: calc(1em + 0.5vw);
+}
+
+@media (max-width: 1200px) {
+    .why-choose {
+        max-width: 90%;
+        padding: calc(1.5em + 2vw) calc(1.5em + 2vw) calc(1em + 1vw) calc(5em + 2vw);
+    }
+}
+
+@media (max-width: 900px) {
+    .why-choose {
+        max-width: 80%;
+        padding: calc(1.5em + 2vw) calc(1.5em + 2vw) calc(1em + 1vw) calc(4em + 2vw);
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose {
+        max-width: 100%;
+        padding: calc(1.5em + 2vw) calc(1.5em + 2vw) calc(1em + 1vw) calc(2em + 2vw);
+    }
+}

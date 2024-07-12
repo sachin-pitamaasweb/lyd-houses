@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 
 import "./style.css";
 
-const  OurCompanyImage ="https://res.cloudinary.com/dtivafy25/image/upload/v1720180618/img-1_twhhrk.svg";
+const OurCompanyImage = "https://res.cloudinary.com/dtivafy25/image/upload/v1720180618/img-1_twhhrk.svg";
 
 const OurCompany = () => {
 
@@ -23,13 +23,18 @@ const OurCompany = () => {
                         <h2>Inside</h2>
                         <h1>OUR COMPANY</h1>
                         <p>
-                            At <span className="highlight">LYD Housing</span>, we believe in building more than just houses; we create homes where families can thrive and memories are made. Our team is dedicated to crafting high-quality, personalized homes that reflect your unique style and needs. Join our community and let us help you <span className="highlight">build the home of your dreams.</span>
+                            <span className="highlight">LYD Housing LLC </span>is a fairly new company in real estate but we are Proud to have a team having joint experience  of 75 years.
+                        </p>
+                        <br />
+                        <p>
+                            LYD’s  motto is excellence, innovation, futuristic dream houses .
+                            Our Core competency is light steel structure frame houses with high end finishes which fits all budgets.
                         </p>
                         <button className="get-in-touch-button" onClick={handleNavigateToContact}>GET IN TOUCH</button>
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={12} md={4} lg={4} className="company-image">
-                    <img src={OurCompanyImage} alt="Company"  loading="lazy" />
+                    <img src={OurCompanyImage} alt="Company" loading="lazy" />
                 </Grid>
             </Grid>
         </>
