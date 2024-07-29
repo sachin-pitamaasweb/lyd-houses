@@ -11,3 +11,44 @@
     padding-right: 5%;
     padding-bottom: 8%;
 }
+.equgrid{
+    display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      gap: 20px; /* Space between items */
+      padding: 10px;
+}
+.port{
+width: 80%;
+margin: auto;
+}
+.box1{
+    width: 33.33vw;
+    height: 54vh;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid;
+}
+.boxit{
+    color: #000;
+    text-align: justify;
+    font-family: "MADE Tommy Soft";
+    font-size: 2.344vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+.porthead{
+    color: #000;
+text-align: justify;
+font-family: "MADE Tommy Soft";
+font-size: 3.333vw;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 3.2px;
+text-align: center;
+}
+.boxi{
+    align-content: center;
+}
