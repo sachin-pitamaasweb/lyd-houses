@@ -51,7 +51,7 @@
 
   
   .contact-button-mobile {
-    background-color: #8B0000;
+    background-color: #8B0000 !important;
     color: #fff;
     width: 100%;
     font-family: 'made-tommy-soft-light-personal-use !important';
