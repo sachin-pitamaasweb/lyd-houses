@@ -34,9 +34,9 @@ const PropertyCard = ({ property }) => {
           <MoveIcon />
           <p className="property-price">{property.price}</p>
         </div>
-        <div className='wishlist' onClick={handleIconClick}>
+        {/* <div className='wishlist' onClick={handleIconClick}>
           {isFavorite ? <FavoriteIcon sx={{ color: '#881A1B' }} /> : <FavoriteBorderIcon />}
-        </div>
+        </div> */}
         <div className='overlay-button'>
           <div className='top-section'>
             <button className='contact-us' onClick={handleContactUsClick}>Contact Us</button>

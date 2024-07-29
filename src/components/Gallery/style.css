@@ -58,6 +58,9 @@
   .gallery-item-img {
     width: 100%;
   }
+  .text {
+    font-size: calc(11px + 0.5vw) !important;
+  }
 
   .gallery-container h5 {
     font-size: calc(12px + 1.5vw);

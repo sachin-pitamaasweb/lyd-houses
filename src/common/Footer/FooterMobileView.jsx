@@ -31,17 +31,20 @@ const FooterMobileView = () => {
         <img src={"https://res.cloudinary.com/dtivafy25/image/upload/v1720182290/logo_aa9m3n.svg"} alt="LYD Housing Logo" />
       </div>
       <div className="social-media-icons">
+        
         <p onClick={() => handleSocialMediaClick('https://instagram.com')}><img src={"https://res.cloudinary.com/dtivafy25/image/upload/v1720181959/Instagram_yhfyd7.svg"} alt="Instagram" loading='lazy' /></p>
         <p onClick={() => handleSocialMediaClick('https://facebook.com')}><img src={"https://res.cloudinary.com/dtivafy25/image/upload/v1720181947/Facebook_vdftwz.svg"} alt="Facebook" loading='lazy' /></p>
         <p onClick={() => handleSocialMediaClick('https://x.com')}><img src={"https://res.cloudinary.com/dtivafy25/image/upload/v1720181965/TwitterX_wgqurf.svg"} alt="X" loading='lazy' /></p>
       </div>
       <nav className="footer-nav">
+      <h2> Quick Links </h2>
         {navLinks.map((item) => (
           <p key={item.id} onClick={() => handleNavigationClick(item.link)}>{item.title}</p>
         ))}
       </nav>
       <div className="contact-info-mobile">
-        <p>Contact US</p>
+        
+        <p>Reach Us</p>
         <p className='locate' onClick={() => window.open("tel:+1123456789", "_blank")}>+1 1234 56 789</p>
       </div>
       <div className="location-info">

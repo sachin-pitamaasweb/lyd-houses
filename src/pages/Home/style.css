@@ -26,7 +26,10 @@ margin: auto;
     height: 54vh;
     flex-shrink: 0;
     border-radius: 25px;
-    border: 1px solid;
+   
+    background-image: url('https://res.cloudinary.com/dtivafy25/image/upload/v1722256323/WhatsApp_Image_2024-07-26_at_3.41.32_PM_1_1_avawqg.png');
+background-size: cover;
+background-repeat: no-repeat;
 }
 .boxit{
     color: #000;
@@ -52,3 +55,45 @@ text-align: center;
 .boxi{
     align-content: center;
 }
+
+
+@media screen and (max-width: 425px)  {
+    .porthead {
+  
+        font-size: 6.0vw;      
+    }
+    .box1 {
+        width: 100%;
+        height: 20vh;
+        flex-shrink: 0;
+        border-radius: 25px;
+        border: 1px solid;
+    }
+    .boxit {
+        color: #000;
+        text-align: justify;
+        font-family: "MADE Tommy Soft";
+        font-size: 3.8vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 2.4px;
+    }
+
+    .equgrid {
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 1024px)  {
+  .home-estates {
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-right: 6%;
+    padding-bottom: 8%;
+}
+  }

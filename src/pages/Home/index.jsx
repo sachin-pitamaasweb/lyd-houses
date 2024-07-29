@@ -83,7 +83,9 @@ const Home = () => {
 
         </div>
         <div class="equgrid">
-          <div class="box1"></div>
+          <div class="box1">
+            
+          </div>
           <div className="boxi">
             <p class="boxit">
               Portable storage units featuring a steel frame and body with heavy-duty shutters. Available in a range of sizes to suit your needs.
