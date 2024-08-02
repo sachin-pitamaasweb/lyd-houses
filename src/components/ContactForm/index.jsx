@@ -7,8 +7,8 @@ import {
     MenuItem,
     FormControl,
     Select,
-    useTheme,
-    useMediaQuery
+    // useTheme,
+    // useMediaQuery
 } from '@mui/material';
 
 
@@ -22,8 +22,8 @@ const enquiryOptions = [
 
 
 const ContactForm = () => {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    // const theme = useTheme();
+    // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -111,19 +111,20 @@ const ContactForm = () => {
     };
 
     const handleAddressClick = () => {
-        window.open('https://example.com/address', '_blank');
+        window.open('https://maps.app.goo.gl/Ez3spstSczxtgAQZ8', '_blank');
     };
 
     const handlePhoneClick = () => {
-        window.open('tel:+1123456789', '_blank');
+        window.open('tel:+16262464614', '_blank');
     };
 
     const handleEmailClick = () => {
-        window.open('mailto:homes@gmail.com', '_blank');
+        window.open('mailto:sales@lydhousing.com', '_blank');
     };
 
-    const imgUrl1 = isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720181802/img-1_rlx9kq.svg" : "https://res.cloudinary.com/dtivafy25/image/upload/v1720181682/img-1_o1d517.svg"
-    const imgUrl2 = isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720181803/img-2_yxc2q1.svg" : "https://res.cloudinary.com/dtivafy25/image/upload/v1720181683/img-2_fmp5nu.svg"
+    // const imgUrl1 = isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720181802/img-1_rlx9kq.svg" : "https://res.cloudinary.com/dtivafy25/image/upload/v1720181682/img-1_o1d517.svg"
+    // const imgUrl2 = isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720181803/img-2_yxc2q1.svg" : "https://res.cloudinary.com/dtivafy25/image/upload/v1720181683/img-2_fmp5nu.svg"
+
     return (
         <>
             <Grid container spacing={2} className='contact-form-container'>
@@ -132,14 +133,14 @@ const ContactForm = () => {
                         <h5>Engage with</h5>
                         <h3>OUR TEAM</h3>
                     </div>
-                    <div className='contact-form-img'>
+                    {/* <div className='contact-form-img'>
                         <div className='img-1'>
                             <img src={imgUrl1} alt={'contact-img'} className='img-contact' loading="lazy" />
                         </div>
                         <div className='img-2'>
                             <img src={imgUrl2} alt={'contact-img'} className='img-contact-1' loading="lazy" />
                         </div>
-                    </div>
+                    </div> */}
                 </Grid>
                 <Grid item xx={12} sm={12} md={6} lg={6} className='contact-form'>
                     <form className='form-tag' onSubmit={handleSubmit}>
@@ -220,15 +221,17 @@ const ContactForm = () => {
                 </Grid>
                 <Grid className='contact-info' item xs={12} sm={12} md={4} lg={4}>
                     <h6>Address</h6>
-                    <h4 onClick={handleAddressClick}>ABC Street, York City</h4>
+                    <h4 onClick={handleAddressClick}>17 Springdale Way
+                        Mechanicsburg,
+                        P.A.17050, USA</h4>
                 </Grid>
                 <Grid className='contact-info' item xs={12} sm={12} md={4} lg={4}>
                     <h6>Contact</h6>
-                    <h4 onClick={handlePhoneClick}>+1 1234 56 789</h4>
+                    <h4 onClick={handlePhoneClick}>+1 6262-464-614</h4>
                 </Grid>
                 <Grid className='contact-info' item xs={12} sm={12} md={4} lg={4}>
                     <h6>Mail</h6>
-                    <h4 onClick={handleEmailClick}>homes@gmail.com</h4>
+                    <h4 onClick={handleEmailClick}>sales@lydhousing.com</h4>
                 </Grid>
             </Grid>
         </>

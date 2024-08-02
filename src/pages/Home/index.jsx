@@ -11,7 +11,7 @@ import Experience from '../../components/Experience/index.jsx';
 import PropertyCard from '../../components/PropertyCard/index.jsx';
 import CraftedwithLove from '../../components/CraftedwithLove/index.jsx';
 import GetConnected from '../../components/GetConnected/index.jsx';
-import Testimonials from '../../components/Testimonials/index.jsx';
+// import Testimonials from '../../components/Testimonials/index.jsx';
 import WhyChoose from '../../components/WhyChoose/index.jsx';
 
 //mobile
@@ -21,6 +21,7 @@ import PropertyCardForMobileView from '../../components/PropertyCard/PropertyCar
 import { webName, EstatesCard } from '../../constants/helper.js';
 
 import './style.css';
+import ThreeDExperience from '../../components/ThreeDExperience/index.jsx';
 
 
 const Home = () => {
@@ -34,15 +35,20 @@ const Home = () => {
       description: 'Description for Image 1'
     },
     {
-      imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720177007/home_ktah2y.svg" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720174730/build_bevmnq.svg',
+      imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1722596992/img-1_rf704d.png" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720174730/build_bevmnq.svg',
       title: 'Creating Beautiful Spaces',
       description: 'Description for Image 2'
     },
     {
-      imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720177007/home_ktah2y.svg" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720177043/img-1_werkle.svg',
+      imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1722596988/unsplash__HqHX3LBN18_gglu72.png" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720177043/img-1_werkle.svg',
       title: 'Innovative Designs',
       description: 'Description for Image 3'
-    }
+    },
+    {
+      imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1722596981/unsplash_1ddol8rgUH8_z6gdxh.png" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720177043/img-1_werkle.svg',
+      title: 'Innovative Designs',
+      description: 'Description for Image 3'
+    },
   ];
 
 
@@ -62,7 +68,7 @@ const Home = () => {
         midText="LYD Housing LLC"
         endText="we are dedicated to crafting dream homes that embody your dreams, aspirations, and lifestyle. Our mission is to deliver high-quality, affordable, and environmentally friendly houses that cater to your diverse needs."
       />
-
+      <ThreeDExperience />
       {isMobile1 ? <ExperienceForMobile /> : <Experience />}
       <div className={isMobile ? "home-estates-mobile" : "home-estates"}>
         {isMobile ? (
@@ -97,8 +103,6 @@ const Home = () => {
 
       <WhyChoose />
       <GetConnected />
-
-      <Testimonials />
     </>
   );
 }

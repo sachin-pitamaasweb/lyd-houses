@@ -9,7 +9,7 @@ const Experience = () => {
     return (
         <div className="experience">
             <div className="experience-text">
-                <h4>What You’ll Get</h4>
+                <h4>What You’ll Get Experience</h4>
             </div>
             <div className="container">
                 <div className="gallery">

@@ -14,6 +14,9 @@
 .img-grid-item {
     display: block !important;
 }
+.contact-form-text{
+    margin-top: 300px !important;
+}
 
 .contact-form-text h3 {
     margin: 0;
@@ -80,7 +83,7 @@
 .contact-info h6 {
     margin: 0;
     font-size: calc(18px + 0.5vw);
-    font-weight: 300;
+    font-weight: 800;
 }
 
 .contact-info h4 {
@@ -112,7 +115,7 @@
     .contact-info h6 {
         margin: 0;
         font-size: calc(18px + 0.5vw);
-        font-weight: 300;
+        font-weight: 800;
         text-align: center;
     }
 
@@ -170,7 +173,7 @@
     .contact-info h6 {
         margin: 0;
         font-size: calc(18px + 0.5vw);
-        font-weight: 300;
+        font-weight: 800;
         text-align: center;
     }
 
@@ -227,7 +230,7 @@
     .contact-info h6 {
         margin: 0;
         font-size: calc(18px + 0.5vw);
-        font-weight: 300;
+        font-weight: 800;
         text-align: center;
     }
 

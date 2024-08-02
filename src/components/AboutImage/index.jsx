@@ -7,7 +7,7 @@ import "./style.css";
 const imgUrl = [
     {
         id: 1,
-        img: 'https://res.cloudinary.com/dtivafy25/image/upload/v1720180623/img-2_a9ye6i.svg'
+        img: 'https://res.cloudinary.com/dtivafy25/image/upload/v1722594907/unsplash_bfOQSDwEFg4_libqaw.png'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const imgUrl = [
     },
     {
         id: 3,
-        img: 'https://res.cloudinary.com/dtivafy25/image/upload/v1720180620/img-3_mwd1x4.svg'
+        img: 'https://res.cloudinary.com/dtivafy25/image/upload/v1722594907/WhatsApp_Image_2024-08-01_at_6.07.18_PM_1_jv4p39.png'
     },
     {
         id: 4,

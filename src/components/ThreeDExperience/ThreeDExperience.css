@@ -1,0 +1,41 @@
+/* Base styles for the container */
+.container {
+    padding: 50px;
+  }
+  
+  /* Styles for the title */
+  .title {
+    font-size: calc(1em + 1vw);
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the iframe title */
+  .iframe-title {
+    font-size: calc(0.75em + 0.5vw);
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the iframe */
+  .iframe {
+    width: 100%;
+    height: calc(100vh - 200px);
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Responsive styles for devices with max-width of 768px */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0;
+    }
+  
+    .iframe-title {
+      margin-bottom: 20px; /* Adjusted margin for mobile */
+    }
+  
+    .iframe {
+      height: calc(100vh - 100px); /* Adjusted height for mobile if needed */
+      margin-bottom: 20px; /* Adjusted margin for mobile if needed */
+    }
+  }
+  
