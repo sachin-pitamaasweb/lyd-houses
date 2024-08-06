@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-bottom">
                     <p>© {currentYear} HOMES, All Rights Reserved.</p>
-                    <p>Designed by <span className='company-link' onClick={handleCompanyLinkClick}>PITAMAAS</span></p>
+                    <p>Designed & Developed by <span className='company-link' onClick={handleCompanyLinkClick}>PITAMAAS</span></p>
                 </div>
             </footer>
         </>

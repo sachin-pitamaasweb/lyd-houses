@@ -31,22 +31,22 @@ const Home = () => {
   const items = [
     {
       imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720177007/home_ktah2y.svg" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720174730/home_nuzo8h.svg',
-      title: 'Turning Dreams into Reality',
+      title: 'Your Dream Home Awaits',
       description: 'Description for Image 1'
     },
     {
       imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1722596992/img-1_rf704d.png" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720174730/build_bevmnq.svg',
-      title: 'Creating Beautiful Spaces',
+      title: 'Experience the Difference',
       description: 'Description for Image 2'
     },
     {
       imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1722596988/unsplash__HqHX3LBN18_gglu72.png" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720177043/img-1_werkle.svg',
-      title: 'Innovative Designs',
+      title: 'Turning Dreams into Reality',
       description: 'Description for Image 3'
     },
     {
       imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1722596981/unsplash_1ddol8rgUH8_z6gdxh.png" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720177043/img-1_werkle.svg',
-      title: 'Innovative Designs',
+      title: 'Homes Built with Heart',
       description: 'Description for Image 3'
     },
   ];
@@ -59,7 +59,7 @@ const Home = () => {
       </Helmet>
       <Banner
         isSearch={false}
-        title="Your Dream Home Awaits"
+        // title="Your Dream Home Awaits"
         items={items}
         isMobile={isMobile}
       />

@@ -51,7 +51,7 @@ const Banner = ({ isSearch, title, items, isMobile }) => {
         <div className={isSearch ? "banner" : "banner-without-row"}>
             <div className={isSearch ? "banner-content" : "banner-content-without-search"}>
                 <div className="banner-text">
-                    <h1>{title}</h1>
+                    <h1>{items[currentIndex].title}</h1>
                 </div>
             </div>
             {isSearch && (

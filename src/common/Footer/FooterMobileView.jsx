@@ -54,7 +54,7 @@ const FooterMobileView = () => {
       </div>
       <div className="footer-bottom">
         <p>© {currentYear} HOMES, All Rights Reserved.</p>
-        <p>Designed by<span className="company-link" onClick={() => window.open('https://www.pitamaas.com/', '_blank', 'noopener,noreferrer')}> {' '}PITAMAAS</span></p>
+        <p>Designed & Developed by<span className="company-link" onClick={() => window.open('https://www.pitamaas.com/', '_blank', 'noopener,noreferrer')}> {' '}PITAMAAS</span></p>
       </div>
     </footer>
   );

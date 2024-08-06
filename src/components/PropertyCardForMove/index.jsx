@@ -15,10 +15,11 @@ import {
     TextField
 } from '@mui/material';
 
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+// import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import CloseIcon from '@mui/icons-material/Close';
 
 import MoveIcon from '../MoveIcon';
+import CommingSoon from '../ComingSoon';
 
 import './style.css';
 
@@ -39,6 +40,11 @@ const PropertyCard = ({ property, isFormSubmitted, setIsFormSubmitted }) => {
         phone: ''
     });
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
 
 
     const handleContact = () => {
@@ -46,17 +52,17 @@ const PropertyCard = ({ property, isFormSubmitted, setIsFormSubmitted }) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+    // const handleClickOpen = () => {
+    //     setOpen(true);
+    // };
 
     const handleClose = () => {
         setOpen(false);
     };
 
-    const handleMap = () => {
-        console.log("map");
-    };
+    // const handleMap = () => {
+    //     console.log("map");
+    // };
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -114,18 +120,18 @@ const PropertyCard = ({ property, isFormSubmitted, setIsFormSubmitted }) => {
         }
     };
 
-    const handleDownload = () => {
-        const svgString = svgContent;
-        const blob = new Blob([svgString], { type: 'image/svg+xml' });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'image.svg';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-    };
+    // const handleDownload = () => {
+    //     const svgString = svgContent;
+    //     const blob = new Blob([svgString], { type: 'image/svg+xml' });
+    //     const url = URL.createObjectURL(blob);
+    //     const link = document.createElement('a');
+    //     link.href = url;
+    //     link.download = 'image.svg';
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    //     URL.revokeObjectURL(url);
+    // };
 
     return (
         <>
@@ -151,10 +157,16 @@ const PropertyCard = ({ property, isFormSubmitted, setIsFormSubmitted }) => {
                     <Typography variant="body2" color="textSecondary" className='typo-address'>
                         {property.address}
                     </Typography>
-                    <MoveIcon />
+                    <MoveIcon
+                     home={property.home}
+                     bed={property.beds}
+                     bath={property.baths}
+                     sqft={property.sqft}
+                     garages={property.garages}
+                    />
                     <Box className="property-price">
-                        <AttachMoneyIcon />
-                        <Typography variant="body2">${property.price}</Typography>
+                        {/* <AttachMoneyIcon /> */}
+                        {/* <Typography variant="body2">${property.price}</Typography> */}
                     </Box>
                     <Button variant="contained" className="contact-button" onClick={handleContact}>
                         Contact Us
@@ -164,14 +176,16 @@ const PropertyCard = ({ property, isFormSubmitted, setIsFormSubmitted }) => {
                             variant="contained"
                             className="contact-button"
                             // onClick={handleClickOpen}
-                            onClick={isFormSubmitted ? handleDownload : handleClickOpen}
+                            // onClick={isFormSubmitted ? handleDownload : handleClickOpen} 
+                            onClick={openModal}   
                         >
                             {isFormSubmitted ? 'Download' : 'Floor Plan'}
                         </Button>
                         <Button
                             variant="contained"
                             className="contact-button"
-                            onClick={handleMap}
+                            // onClick={handleMap}
+                            onClick={openModal}
                         >
                             Map
                         </Button>
@@ -252,6 +266,7 @@ const PropertyCard = ({ property, isFormSubmitted, setIsFormSubmitted }) => {
                     </form>
                 </DialogContent>
             </Dialog>
+            <CommingSoon isOpen={isModalOpen} onClose={closeModal} />
         </>
     );
 };

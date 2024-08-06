@@ -46,8 +46,8 @@ const Header = () => {
         </ul>
       </nav>
       <div className="contact">
-        <MuiLink href="tel:+1789123456" b color="inherit" underline="none" display="flex" alignItems="center">
-          <Phone /> +1 789 123 456
+        <MuiLink href="tel:+16262464614" b color="inherit" underline="none" display="flex" alignItems="center">
+          <Phone /> +1 6262 464 614
         </MuiLink>
       </div>
     </header>

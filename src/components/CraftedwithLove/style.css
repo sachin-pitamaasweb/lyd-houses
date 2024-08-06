@@ -246,3 +246,28 @@
     }
 }
 
+@media screen and (min-width: 1401px) and (max-width: 1900px) {
+    .main-text {
+        font-size: calc(20px + 10 * ((170vw - 320px) / 448));
+        font-weight: 500;
+        margin: 0;
+        letter-spacing: 0.31em;
+    }
+    .sub-text {
+        font-size: calc(14px + 6 * ((100vw - 320px) / 448));
+        margin: 0;
+        font-weight: 300;
+        text-align: end;
+        margin-right: 10px;
+    }
+
+    .image-placeholder {
+        width: 50%;
+        height: 42vh;
+        background-color: #f0f0f0;
+        border-radius: 0px !important;
+        margin-left: 58px;
+        margin-top: 56px;
+    }
+}
+
