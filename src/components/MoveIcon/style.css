@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: 'made-tommy-soft-light-personal-use';
     src: url('../../assets/font/MADE-Tommy-Soft-Light-PERSONAL-USE.woff') format('truetype');
-  }
+  } */
 
 .card {
     margin-top: 10px;
@@ -32,7 +32,7 @@
     .label {
         font-size: 14px !important;
         margin-left: 10px !important;
-        font-family: 'made-tommy-soft-light-personal-use !important';
+        /* font-family: 'made-tommy-soft-light-personal-use !important'; */
     }
 }
 

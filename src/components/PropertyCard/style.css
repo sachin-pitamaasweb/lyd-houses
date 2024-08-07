@@ -20,7 +20,7 @@
 }
 
 .property-card-content h3 {
-  font-size: 24px;
+  font-size: 53px;
   margin: 0;
   color: #a31b1b;
 }
@@ -38,6 +38,7 @@
 .property-address {
   font-weight: bold;
   color: #a31b1b;
+  font-size: 21px;
 }
 
 .property-details {
