@@ -27,12 +27,12 @@
 }
 
 .box1 {
-    width: 33.33vw;
-    height: 54vh;
+    /* width: 33.33vw;
+    height: 54vh; */
     flex-shrink: 0;
-    border-radius: 25px;
-
-    background-image: url('https://res.cloudinary.com/dtivafy25/image/upload/v1722594911/WhatsApp_Image_2024-08-01_at_5.51.33_PM_fhacnn.png');
+    border-radius: 0px;
+    height: 50vh;
+    /* background-image: url('https://res.cloudinary.com/dtivafy25/image/upload/v1722594911/WhatsApp_Image_2024-08-01_at_5.51.33_PM_fhacnn.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -57,7 +57,7 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 3.2px;
-    text-align: center;
+    text-align: left;
 }
 
 .boxi {

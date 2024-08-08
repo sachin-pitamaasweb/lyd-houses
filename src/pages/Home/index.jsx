@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { useTheme, useMediaQuery } from '@mui/material';
 
@@ -23,11 +23,19 @@ import { webName, EstatesCard } from '../../constants/helper.js';
 import './style.css';
 import ThreeDExperience from '../../components/ThreeDExperience/index.jsx';
 
+const images = [
+  'https://res.cloudinary.com/dtivafy25/image/upload/v1723122026/img-1_lcntqk.png',
+  'https://res.cloudinary.com/dtivafy25/image/upload/v1723122029/img-2_n66woe.png'
+  // Add more image URLs here
+];
+
 
 const Home = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isMobile1 = useMediaQuery(theme.breakpoints.down('md'));
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const items = [
     {
       imgUrl: isMobile ? "https://res.cloudinary.com/dtivafy25/image/upload/v1720177007/home_ktah2y.svg" : 'https://res.cloudinary.com/dtivafy25/image/upload/v1720174730/home_nuzo8h.svg',
@@ -51,6 +59,17 @@ const Home = () => {
     },
   ];
 
+
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(intervalId); // Clean up interval on component unmount
+  }, []);
+
+  const currentImageUrl = images[currentImageIndex];
 
   return (
     <>
@@ -89,8 +108,7 @@ const Home = () => {
 
         </div>
         <div class="equgrid">
-          <div class="box1">
-            
+          <div class="box1" style={{ backgroundImage: `url(${currentImageUrl})` }}> 
           </div>
           <div className="boxi">
             <p class="boxit">

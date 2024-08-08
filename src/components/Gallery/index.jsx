@@ -24,8 +24,8 @@ const Gallery = () => {
       <h5>What we</h5>
       <h4>BUILD?</h4>
       <Text
-        Title="What are the advantages of light steel framing construction?"
-        text="Light gauge steel construction is stronger and more durable than wood or concrete construction. Because light gauge steel framing is not biodegradable, it is not susceptible to decay or termite attack, and is moisture resistant so it will not shrink, rot, or warp in adverse weather conditions"
+        Title="What are the advantages of light steel frame houses construction?"
+        text="light steel gauge frame houses construction is stronger and more durable than wood or concrete construction. Because light gauge steel framing is not biodegradable, it is not susceptible to decay or termite attack, and is moisture resistant so it will not shrink, rot, or warp in adverse weather conditions"
       />
       <div className='grid-div-gallery'>
         <Grid container spacing={2} className='grid-container'>

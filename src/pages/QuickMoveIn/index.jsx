@@ -13,40 +13,40 @@ import B2 from '../../assets/banner/build.svg';
 
 
 const items = [
-    {
-      imgUrl: B1,
-      title: 'Turning Dreams into Reality',
-      description: 'Description for Image 1'
-    },
-    {
-      imgUrl: B2,
-      title: 'Creating Beautiful Spaces',
-      description: 'Description for Image 2'
-    },
-    {
-      imgUrl: B1,
-      title: 'Innovative Designs',
-      description: 'Description for Image 3'
-    }
-  ];
+  {
+    imgUrl: B1,
+    title: 'Turning Dreams into Reality',
+    description: 'Description for Image 1'
+  },
+  {
+    imgUrl: B2,
+    title: 'Creating Beautiful Spaces',
+    description: 'Description for Image 2'
+  },
+  {
+    imgUrl: B1,
+    title: 'Innovative Designs',
+    description: 'Description for Image 3'
+  }
+];
 
 const QuickMoveIn = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-    return (
-       <>
-       <Helmet>
+  return (
+    <>
+      <Helmet>
         <title>{webName} - Quick Move-In</title>
-       </Helmet>
-       <Banner
+      </Helmet>
+      <Banner
         isSearch={false}
         items={items}
         title="Quick Move-In"
         isMobile={isMobile}
-       />
-       {/* <SearchForm /> */}
-       <PropertiesGrid />
-       </>
-    )
+      />
+      {/* <SearchForm /> */}
+      <PropertiesGrid />
+    </>
+  )
 }
 export default QuickMoveIn
