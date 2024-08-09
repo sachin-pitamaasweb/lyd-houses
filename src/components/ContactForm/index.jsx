@@ -9,8 +9,10 @@ import {
     Select,
     // useTheme,
     // useMediaQuery
+    Alert,
+    Snackbar
 } from '@mui/material';
-
+import emailjs from 'emailjs-com';
 
 import './style.css';
 
@@ -37,6 +39,9 @@ const ContactForm = () => {
         email: '',
         phone: '',
     });
+    const [snackbarMessage, setSnackbarMessage] = useState('');
+    const [snackbarSeverity, setSnackbarSeverity] = useState('');
+    const [openSnackbar, setOpenSnackbar] = useState(false);
 
     const handleChangeDrop = (event) => {
         setEnquiry(event.target.value)
@@ -100,11 +105,52 @@ const ContactForm = () => {
     };
 
 
-    const handleSubmit = (event) => {
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     if (validateForm()) {
+    //         // Form submission logic here
+    //         console.log('Form submitted:', formData);
+    //     } else {
+    //         console.log('Form has errors. Please fix them.');
+    //     }
+    // };
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
         if (validateForm()) {
-            // Form submission logic here
-            console.log('Form submitted:', formData);
+            const serviceId = 'service_bcfj54a';
+            const templateId = 'template_epq12gl';
+            const publicKey = 'XTdLZxtsN_NgT6nda';
+            const templateParams = {
+                firstName: formData.firstName,
+                lastName: formData.lastName,
+                email: formData.email,
+                phone: formData.phone,
+                enquiry,
+            };
+
+            try {
+                const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+                if (response) {
+                    setSnackbarMessage('Form submitted successfully!');
+                    setSnackbarSeverity('success');
+                }
+                setOpenSnackbar(true);
+            } catch (error) {
+                console.error('Error sending email:', error);
+                setSnackbarMessage('Failed to submit form. Please try again later.');
+                setSnackbarSeverity('error');
+                setOpenSnackbar(true);
+            } finally {
+                // Clear form data after submission
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    phone: '',
+                });
+                setEnquiry('');
+            }
         } else {
             console.log('Form has errors. Please fix them.');
         }
@@ -234,6 +280,20 @@ const ContactForm = () => {
                     <h4 onClick={handleEmailClick}>sales@lydhousing.com</h4>
                 </Grid>
             </Grid>
+            <Snackbar
+                open={openSnackbar}
+                autoHideDuration={6000}
+                onClose={() => setOpenSnackbar(false)}
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+                <Alert
+                    onClose={() => setOpenSnackbar(false)}
+                    severity={snackbarSeverity}
+                    sx={{ width: '100%' }}
+                >
+                    {snackbarMessage}
+                </Alert>
+            </Snackbar>
         </>
     );
 };

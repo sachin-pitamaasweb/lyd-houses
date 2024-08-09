@@ -39,7 +39,7 @@ const Conact = () => {
                 title="Homes Built with Heart"
                 isMobile={isMobile}
             />
-            <ContactForm />
+        <ContactForm />
         </>
     )
 }
